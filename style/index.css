@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Tinos:400,400i&amp;subset=cyrillic');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-size: 30px;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.field-box {
+    margin-bottom: 10px;
+    border: 2px solid #d0d0d0;
+    float: left;
+}
+
+.field {
+    position: relative;
+    width: 1200px;
+    height: 720px;
+
+}
+
+.hero-box {
+    position: absolute;
+    width: 1200px;
+    height: 720px;
+    z-index: 10;
+}
+
+.field .tile {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-image: url(../images/tile-.png);
+    z-index: 5;
+}
+
+.field .tileW {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+    background-image: url(../images/tile-W.png);
+    z-index: 2;
+}
+
+.field .tileHP {
+    position: absolute;
+    background-size: 100%;
+    z-index: 6;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tile-HP.png);
+
+}
+
+.field .tileSW {
+    position: absolute;
+    background-image: url(../images/tile-SW.png);
+    background-size: 100%;
+    z-index: 6;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.hero-box .tileP {
+    position: absolute;
+    background-image: url(../images/tile-P.png);
+    background-size: 100%;
+    z-index: 12;
+    width: 30px;
+    height: 30px;
+}
+
+.hero-box .tileE {
+    position: absolute;
+    background-image: url(../images/tile-E.png);
+    background-size: 100%;
+    z-index: 12;
+    width: 30px;
+    height: 30px;
+}
+
+.hero-box .tileE .health {
+    background-color: #ff0000;
+    z-index: 14;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 3px;
+}
+
+.hero-box .tileP .health {
+    background-color: #00ff00;
+    z-index: 14;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 3px;
+}
